@@ -6,79 +6,55 @@
 }
 
 body {
-  background-color:rgba(134, 4, 4, 0.35);
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
-
-.card {
-  background-color: rgba(134, 4, 4, 0.35);
-  width: 80%;
-  height: 80%;
-  padding: 2%;
+/* Estilos Login */
+.mensLogin{
   text-align: center;
-  display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-
 }
-.cardHome{
- 
+.mensLogin{
+  text-align: center;
+}
+ /* .card-body {
+  margin-top: 5%;
+} */
+.card{
+  margin-top: 8%;
+} 
+.imgLogin{
 position: relative;
-width: 1024px;
-height: 1440px;
-
-background: rgba(134, 4, 4, 0.35); 
+width: 100%;
+height: 100%;
+left: 0px;
+top: 0px;
 }
-
-.card-header {
-  margin: 50px 0;
+.contenedorLogo {
+  width: 60%;
 }
-
-input {
-  display: block;
-  height: 45px;
-  width: 100%;
-  margin: 15px 0;
-  border: none;
-  padding: 10px;
-  font-size: 20px;
+.contenedorLogo, .card-body{
+  margin:auto;
+	text-align:center;
 }
+.imgLogo {
 
-input[type='submit'] {
-  color: black;
-  background-color:  #F5B8B8;
-  margin-top: 30px;
-  cursor: pointer;
+border-radius: 52px;
+margin: auto;
+max-width: 100%;
+width: 50%;
+height: 60%;
+margin-top:  10%; 
+margin-bottom:0;
 }
-
 .error {
   padding: 10px;
   margin: 10px 0;
   background-color: rgba(255, 0, 0, 0.658);
   color: white;
   font-size: bolder;
+  text-align: center;
 }
-
-.user-photo {
-  height: 150px;
-}
-
-.logout-button {
-  background-color: red;
-  color: white;
-  border: none;
-  padding: 15px 10px;
-  margin: 20px;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.logout-button:hover {
-  background-color: rgba(238, 43, 43, 0.685)
-}
+/* Estilos Registro */
