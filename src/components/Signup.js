@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import Logo from '../imagenes/Logo.png'
+import marvelsuperheroes from '../imagenes/marvelsuperheroes.jpg';
 
 
 
@@ -40,22 +42,70 @@ export const SignUp = () => {
   }
 
   return (
+
+    <>
+    <img className="imgLogin" src={marvelsuperheroes} alt='background' />
+    <div className='contenedorLogo'>
+    <img className="imgLogo" src={Logo} alt='Logo' />
+    </div>
+
     <div className='card'>
       <div className='card-header' >
         {error && <p className='error' >{error}</p>}
-        <h1>Regístrate</h1>
+        <h1 className='mensaje'>Regístrate</h1>
       </div>
       <div className='card-body'>
-        <form onSubmit={handleSubmit} >
-          <input type='email' placeholder='Correo electrónico' onChange={handleEmail} />
-          <input type='password' placeholder='Número de indentificación' onChange={handlePassword} />
-          <input type='text' placeholder='Nombre' onChange={handleConfirmName} />
-          <input type='submit' value='Registrarme' />
+        <form className="card card-body" onSubmit={handleSubmit} >
+
+        <div className="form-group input-group">
+                <div className="input-group-text bg-light">
+                    <i className="material-icons">mail</i>
+                </div>
+                <input
+                    type="email"
+                    className="form-control "
+                    placeholder="Correo electrónico"
+                    name="correo"
+                    onChange={handleEmail}
+                />
+            </div>
+
+            <div className="form-group input-group">
+                <div className="input-group-text bg-light">
+                    <i className="material-icons">create</i>
+                </div>
+                <input
+                    type="password"
+                    className="form-control "
+                    placeholder="Identificación"
+                    name="identificacion"
+                    onChange={handlePassword}
+                />
+            </div>
+
+            <div className="form-group input-group">
+                <div className="input-group-text bg-light">
+                    <i className="material-icons">perm_identity</i>
+                </div>
+                <input
+                    type="text"
+                    className="form-control "
+                    placeholder="Nombre de usuario"
+                    name="nombre"
+                    onChange={handleConfirmName}
+                />
+            </div>
+    
+            <button type='submit'className="btn btn-primary btn-block">
+            Registrarme
+            </button>
+      
         </form>
       
-        <p>¿Ya tienes cuenta? <Link to='/login'>Iniciar sesión</Link> </p>
+        <p className= 'linkMess'>¿Ya tienes cuenta? <Link to='/login'>Iniciar sesión</Link> </p>
       </div>
 
     </div>
+    </>
   )
 }

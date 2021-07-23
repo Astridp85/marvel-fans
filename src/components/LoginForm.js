@@ -44,7 +44,7 @@ export const Login = () => {
       <div className='card-header' >
         {error && <p className='error' >{error}</p>}
         
-        <h1 className='mensLogin'>Iniciar sesión</h1>
+        <h1 className='mensaje'>Inicia sesión</h1>
       </div>
       <div className='card-body'>
         <form className='card card-body'onSubmit={handleSubmit}>
@@ -83,7 +83,7 @@ export const Login = () => {
                 Iniciar sesión
             </button>
         </form>
-        <p className='mensLogin'>¿No tienes una cuentra? <Link to='/Signup'>Regístrate</Link> </p>
+        <p className='linkMess'>¿No tienes una cuentra? <Link to='/Signup'>Regístrate</Link> </p>
       
     
       </div>
