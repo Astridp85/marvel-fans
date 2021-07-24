@@ -75,13 +75,13 @@ A continuacion los prototipos de alta fidelidad realizados con la herramienta **
 * [X] Diseñar WebSite.
 * [X] Emplear un lenguaje de programación.
 * [X] Emplear un frameworks
-* [X] Trabajar con la API de Marvel de la siguiente url : https://developer.marvel.com y
+* [X] Trabajar con la API de Marvel de la siguiente url : https://developer.marvel.com 
 * [X] Lograr el registro de usuario (Nombre, identificación y correo electrónico)
 * [X] Una vez registrado el usuario y “logueado" se debe ver listado de comics
 * [X] Debe tener información y visualizarse la foto de los comics
 * [ ] El usuario debe poder crear una lista personalizada con sus comics favoritos. 
-* [ ] La información de los usuarios debe persistir
-* [X] La información de favoritos debe persistir
+* [x] La información de los usuarios debe persistir
+* [ ] La información de favoritos debe persistir
 * [X] Incluye`README.md`.
 * [X] Entregado en un repositorio de GIT 
 * [X] Manual de instalación.
