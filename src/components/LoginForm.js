@@ -84,11 +84,11 @@ export const Login = () => {
             </button>
         </form>
         <p className='linkMess'>¿No tienes una cuentra? <Link to='/Signup'>Regístrate</Link> </p>
-      
     
       </div>
 
     </div>
+    
     </>
   )
 }

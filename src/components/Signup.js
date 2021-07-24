@@ -67,6 +67,7 @@ export const SignUp = () => {
                     placeholder="Correo electrónico"
                     name="correo"
                     onChange={handleEmail}
+                    required
                 />
             </div>
 
@@ -80,6 +81,7 @@ export const SignUp = () => {
                     placeholder="Identificación"
                     name="identificacion"
                     onChange={handlePassword}
+                    required
                 />
             </div>
 
@@ -93,6 +95,7 @@ export const SignUp = () => {
                     placeholder="Nombre de usuario"
                     name="nombre"
                     onChange={handleConfirmName}
+                    required
                 />
             </div>
     

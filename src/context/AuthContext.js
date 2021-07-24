@@ -20,7 +20,7 @@ export const AuthProvider = (props) => {
     return auth.createUserWithEmailAndPassword(email, password);
   }
 
-  const login = (email, password) => {
+ const login = (email, password) => {
     return auth.signInWithEmailAndPassword(email, password);
   }
 

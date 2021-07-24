@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Marvel Fans 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Índice
 
-## Available Scripts
+* [1. Preámbulo](#1-preámbulo)
+* [2. Resumen del Proyecto](#2-resumen-del-proyecto)
+* [3. Manual de instalación ](#3-manual-de-instalacion)
+* [4. Patrón de arquitectura](#4-patron-de-arquitectura)
+* [5. Diseño de la interfaz de Usuario](#5-diseño-de-la-interfaz-de-usuario)
+* [6. Checklist](#6-checklist)
 
-In the project directory, you can run:
 
-### `npm start`
+## 1. Preámbulo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Este proyecto es el desarrollo de una página web que nos permitirá visualizar una serie de datos referente a los comics de Marvel, pensando en la información que puede llegar a ser relevante para cada usuario que quiera conocer más acerca de los comics de Marvel y las distintas ediciones de cada una. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Tiene un sistema de anidación empleando react-router-dom, por lo que el proyecto está complementado por la construcción de un enrutador agregado mediante enlaces. 
 
-### `npm test`
+## 2. Resumen del proyecto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Marvel Fans es un proyecto pensado para mostrar los datos relevantes algunos comics de Marvel. Ha sido un proyecto desarrollado en React.JS y firebase para integrar la base de datos necesaria para el registro de usuario, el inicio de sesión y el almacenamiento de la data generada por la elección de favoritos.
 
-### `npm run build`
+Marvel Fans se logró desarrollar en 4 días, durante ese tiempo se trabajó en la planificación y se llevó a cabo una serie de historias de usuarios, especificando la experiencia de cada uno de los usuarios al navegar en la interfaz, se diseñó pensando en la comodidad del usuario y se seleccionaron colores que resultaran amigables a la vista, así mismo, se busco la manera de generar el ambiente adecuado para las personas que son amantes de los comics de Marvel.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para llegar a dichos resultados, se realizaron prototipos de baja y de alta fidelidad, que sirvieron como guía para establecer lo que seria el producto final.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 3. Manual de instalación 
 
-### `npm run eject`
+Para su configuración, se debe ingresar a github con el siguiente enlace https://github.com/Astridp85/marvel-fans, hay que tomar en cuenta que como el proyecto cuenta con tres ramas debemos ubicarnos en la rama "main" para clonarlo, forkearlo o descargarlo, una vez realizado ese paso, debemos ingresar a la terminal de su preferencia (puede ser la de su editor de código) y ubicarse en una carpeta  una vez ya tenga el proyecto abierto en su editor de código debe ejecutar el comando npm i para poder instalar las dependencias necesarias. Cuando culmine la instalación se debe ejecutar npm start para activar el servidor de desarrollo 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Resumen 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Fork, clone o descargar en zip este repositorio
+* cd desde la terminal para entrar en el proyecto
+* Run npm i para instalar las dependencias necesarias 
+* Run npm start para establecer un servidor de desarrollo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 4. Patrón de arquitectura 
 
-## Learn More
+## Paso 1
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Se instaló react-router-dom para poder configurar el enrutador de nuestra WebSite con el comando npm i --save react-router-dom
+ * Se creó un nuevo proyecto en Firebase y se agrego una carpeta llamada firebase.js, en donde se colocó la configuración necesaria para poder hacer uso de sus servicios.
+ * Se instaló firebase como dependencia en la consola.
+ * Se crearon 4 componentes, divididos de la siguiente manera:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Home.js
+- LoginForm.js
+- PrivateRoute.js
+- Signup.js
+ Los cuales no son mas que pequeños formularios para poder autenticarse, llegando a Home.js donde se puede observar los comics y sus detalles 
+* Existe un documento llamada AuthContex.js en dónde se encuentran todas las validaciones de Firebase.
+* App.js donde convergen cada una de las vistas de la WebSite.
+* App.css algunos pequeños estilos, para gran parte de los estilos se implementó bootstrap 
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 5. Diseño de la interfaz de Usuario
+Para la planificación de a interfaz se procedió a realizar un prototipo de baja y de alta fidelidad.
 
-### Analyzing the Bundle Size
+### Prototipo de Baja Fidelidad
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Se realizaron prototipos de baja fidelidad, con el cual se realizaron pruebas de usabilidad y al recibir el feedback de los mismos, se mejoraron los bocetos para corregir todos esos errores.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Prototipo de Alta Fidelidad
+A continuacion los prototipos de alta fidelidad realizados con la herramienta **Figma** donde se aplicaron los principios de diseño visual para nuestra propuesta final.
 
-### Advanced Configuration
+![Prototipo](src/imagenes/Prototipodealta.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## 6. Checklist
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [X] Diseñar WebSite.
+* [X] Emplear un lenguaje de programación.
+* [X] Emplear un frameworks
+* [X] Trabajar con la API de Marvel de la siguiente url : https://developer.marvel.com y
+* [X] Lograr el registro de usuario (Nombre, identificación y correo electrónico)
+* [X] Una vez registrado el usuario y “logueado" se debe ver listado de comics
+* [X] Debe tener información y visualizarse la foto de los comics
+* [ ] El usuario debe poder crear una lista personalizada con sus comics favoritos. 
+* [ ] La información de los usuarios debe persistir
+* [X] La información de favoritos debe persistir
+* [X] Incluye`README.md`.
+* [X] Entregado en un repositorio de GIT 
+* [X] Manual de instalación.
+* [X] Patrón de arquitectura

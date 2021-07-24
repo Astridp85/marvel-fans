@@ -7,6 +7,7 @@
 
 }
 
+
 body {
   height: 100%;
   width: 100%;
@@ -61,6 +62,53 @@ margin-bottom:0;
 
 /* Estilos Home */
 
+.texFavoritos{
+  color: #0b1150;
+  font-size: 32px;
+  font-family: inherit;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.favoritos{
+position: absolute;
+width: 259px;
+height: 6502px;
+margin-left: 968px;
+top: 520px;
+background-color: rgb(121, 163, 202);
+border-radius: 30px;
+}
+.material-icons{
+  color:rgb(255, 0, 0);
+ 
+}
+.conteoFavoritos{
+  font-size: 20px;
+  text-align: center;
+  color: #0b115083;
+  list-style: none ;
+}
+.btnFavorites{
+background-color: rgba(255, 172, 172, .3);
+border: 0;
+border-radius: 100px;
+cursor: pointer;
+width: 30px;
+height: 30px;
+transition: all .3s ease;
+position: absolute;
+margin-left: 270px;
+margin-top: 15px;
+
+
+}
+.btnFavorites :hover {
+  background-color: rgba(255, 172, 172, .8);
+  border-radius: 100px;
+}
+
 .contenedorLogo2{
   width: 50%;
 
@@ -93,6 +141,10 @@ top: 0px;
 
 }
 .usuario{
+  margin-top: 1%;
+  margin-left: 1%;
+}
+.usuario{
   color: rgb(243, 153, 8);
 }
 .usuario {
@@ -107,7 +159,7 @@ top: 0px;
 
 }
 
-/* .container{
+.container{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -120,5 +172,25 @@ top: 0px;
   border: 1px solid rgb(103, 190, 161);
   cursor: pointer;
   font-size: 00.9em;
-} */
+} 
+
+footer{   
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background: #0b1150;
+}
+footer a{
+  color: #EDD376;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+footer img {
+  margin-left: 35px;
+  width: 2%;
+  height: 2%;
+}
 
